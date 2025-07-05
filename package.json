@@ -1,0 +1,31 @@
+{
+  "name": "d20exp",
+  "version": "1.0.0",
+  "description": "d20srd (3.5) Experiment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:frontend": "vite",
+    "dev:backend": "nodemon server.js",
+    "build": "vite build",
+    "start": "node server.js",
+    "scrape": "node scraper/scrape.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.1.0",
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "svelte": "^5.35.2",
+    "vite": "^6.3.5"
+  }
+}
